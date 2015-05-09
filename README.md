@@ -1,1 +1,2 @@
-# awesome
+# luakit
+my personal luakit config 
