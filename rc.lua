@@ -166,24 +166,23 @@ require "go_next_prev"
 require "go_up"
 
 
---enable scrollbars
+--enable/disable scrollbars
 webview.init_funcs.show_scrollbars = function(view) 
-    view.show_scrollbars = true 
+    view.show_scrollbars = false 
 end
 
 
 --browsing history (parched dmenu needed)
-webview.methods.browse_hist_dmenu = function( view, w )
-    local scripts_dir = luakit.data_dir .. "/scripts" 
-    local hist_file = luakit.data_dir .. "/history.db" 
-    local query = "select uri, title, datetime(last_visit,'unixepoch') from history order by last_visit DESC;" 
-    local dmenu = "dmenu -b -l 10 -nf '#888888' -nb '#222222' -sf '#ffffff' -sb '#285577'" 
-    -- AFAIK, luakit will urlencode spaces in uri's so this crude cut call should work fine.
-    local fh = io.popen( "sh -c \"echo \\\"" .. query .. "\\\" | sqlite3 " .. hist_file .. " | sed 's#|#  #' | " .. dmenu .. " | cut -d' ' -f1\"" , "r" )
-    local selection = fh:read( "*a" )
-    fh:close()
-    if selection ~= "" then w:navigate( selection ) end
-end
+--webview.methods.browse_hist_dmenu = function( view, w )
+--    local scripts_dir = luakit.data_dir .. "/scripts" 
+--    local hist_file = luakit.data_dir .. "/history.db" 
+--    local query = "select uri, title, datetime(last_visit,'unixepoch') from history order by last_visit DESC;" 
+--    local dmenu = "dmenu -b -l 10 -nf '#888888' -nb '#222222' -sf '#ffffff' -sb '#285577'" 
+--    local fh = io.popen( "sh -c \"echo \\\"" .. query .. "\\\" | sqlite3 " .. hist_file .. " | sed 's#|#  #' | " .. dmenu .. " | cut -d' ' -f1\"" , "r" )
+--    local selection = fh:read( "*a" )
+--    fh:close()
+--    if selection ~= "" then w:navigate( selection ) end
+--end
 
 
 --Opera-Speed-Dial

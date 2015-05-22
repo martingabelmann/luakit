@@ -200,8 +200,8 @@ add_binds("normal", {
     key({}, "m", "Go forward in the browser history `[count=1]` times.",
         function (w, m) w:forward(m.count) end),
 
-    key({}, "h", "Browse History",
-	 function (w) w:browse_hist_dmenu() end),
+--    key({}, "h", "Browse History",
+--	 function (w) w:browse_hist_dmenu() end),
 
 -- Speeddial
     buf("^gs", "Add  current Page to Speeddial",

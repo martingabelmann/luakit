@@ -27,5 +27,12 @@ kvv-efa.de
 *.gmx.de
 *.gmx.net
 *.todoist.com
+todoist.com
+ec2-54-183-232-175.us-west-1.compute.amazonaws.com
+*.us-west-1.compute.amazonaws.com
+54.183.232.175
 *.zylom.com
 *.github.com
+192.30.252.131
+*.gabelmann.biz
+92.51.150.133
