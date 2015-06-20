@@ -164,7 +164,7 @@ end )
 local buf = lousy.bind.buf
 add_binds("normal", {
 
-    buf("^gsa", "Add  current Page to Speeddial",
+    buf("^ga", "Add  current Page to Speeddial",
          function (w) w:add_speeddial(w) end),
 
     buf("^gS$", "Open Speeddial in new Tab.",
