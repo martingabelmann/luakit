@@ -63,6 +63,8 @@ search_engines = {
     arch  = "https://wiki.archlinux.org/index.php/Special:Search?fulltext=Search&search=%s",
     suse = "https://en.opensuse.org/index.php?search=%s",   
     vim = "http://vim.wikia.com/wiki/Special:Search?search=%s",
+    php = "http://php.net/manual-lookup.php?pattern=%s&scope=quickref",
+    cpp = "http://en.cppreference.com/mwiki/index.php?search=%s",
 }
 
 -- Set google as fallback search engine
