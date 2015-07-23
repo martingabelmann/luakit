@@ -129,7 +129,7 @@ require "follow"
 
 -- Use a custom charater set for hint labels
 local s = follow.label_styles
-follow.label_maker = s.sort(s.reverse(s.charset("asdfqwerzy")))
+follow.label_maker = s.sort(s.reverse(s.charset("asdfqwerty")))
 
 -- Match only hint labels
 --follow.pattern_maker = follow.pattern_styles.match_label
@@ -172,7 +172,7 @@ webview.init_funcs.show_scrollbars = function(view)
 end
 
 
-
+--Opera SpeedDial 
 require "speeddial"
 
 -----------------------------

@@ -5,7 +5,7 @@
 local theme = {}
 
 -- Default settings
-theme.font = "monospace normal 9"
+theme.font = "Clean 10"
 theme.fg   = "#fff"
 theme.bg   = "#000"
 
@@ -20,23 +20,23 @@ theme.warning_fg = "#F00"
 theme.warning_bg = "#FFF"
 
 -- Notification colours
-theme.notif_fg = "#444"
-theme.notif_bg = "#FFF"
+theme.notif_fg = "#CCC"
+theme.notif_bg = "#000"
 
 -- Menu colours
-theme.menu_fg                   = "#000"
-theme.menu_bg                   = "#fff"
-theme.menu_selected_fg          = "#000"
-theme.menu_selected_bg          = "#FF0"
-theme.menu_title_bg             = "#fff"
-theme.menu_primary_title_fg     = "#f00"
+theme.menu_fg                   = "#fff"
+theme.menu_bg                   = "#000"
+theme.menu_selected_fg          = "#fff"
+theme.menu_selected_bg          = "#00F"
+theme.menu_title_bg             = "#000"
+theme.menu_primary_title_fg     = "#00f"
 theme.menu_secondary_title_fg   = "#666"
 
 -- Proxy manager
-theme.proxy_active_menu_fg      = '#000'
-theme.proxy_active_menu_bg      = '#FFF'
-theme.proxy_inactive_menu_fg    = '#888'
-theme.proxy_inactive_menu_bg    = '#FFF'
+theme.proxy_active_menu_fg      = '#FFF'
+theme.proxy_active_menu_bg      = '#000'
+theme.proxy_inactive_menu_fg    = '#FFF'
+theme.proxy_inactive_menu_bg    = '#888'
 
 -- Statusbar specific
 theme.sbar_fg         = "#fff"
@@ -48,8 +48,8 @@ theme.dbar_bg         = "#000"
 theme.dbar_error_fg   = "#F00"
 
 -- Input bar specific
-theme.ibar_fg           = "#000"
-theme.ibar_bg           = "#fff"
+theme.ibar_fg           = "#fff"
+theme.ibar_bg           = "#000"
 
 -- Tab label
 theme.tab_fg            = "#888"
