@@ -62,37 +62,37 @@ end
 
 
 --Speeddial Template
-local html_template = [==[
+local html_template = [[
 <html>
 <head>
     <title>Speed Dial</title>
     <style type="text/css">
     body {
-        background: #000000;
+        background: ]] .. theme.bg .. [[;
         text-align: center;
     }
     
-    a:link {text-decoration: none; font-color:#000000;}
-    a:hover {text-decoration: none; font-color:#ffffff;}
+    a:link {text-decoration: none; font-color: ]] .. theme.bg  .. [[;}
+    a:hover {text-decoration: none; font-color:]] .. theme.fg  .. [[;}
         
         
 	div.images {
 	width:187px;
 	height:100px;
 	overflow:hidden;
-	border: 2px solid #ffffff;
+	border: 2px solid ]] .. theme.fg  .. [[;
 	float:left;
 	position:relative;
 	margin-left:8px;
 	margin-top:8px;
 	text-align: center;
-	backround-color: #222222;
+	backround-color:]] .. theme.speeddial .. [[;
 	cursor:pointer;
 	}
 
 	div.images:hover  {
-	border: 4px solid #222222;
-	backround-color: #000000;
+	border: 4px solid ]] .. theme.speeddial .. [[;
+	backround-color: ]] .. theme.bg .. [[;
 	margin-left:4px;
 	margin-top:4px;
 	}
@@ -100,17 +100,17 @@ local html_template = [==[
 	div.close {
 	width:9px;
 	height:9px;
-	background-color:#ffffff;
+	background-color:]] .. theme.fg .. [[;
 	position:absolute;
 	text-align-center;
 	font-size:7px;
-	font-color:#000000;
+	font-color:]] .. theme.bg .. [[;
 	}
 	
 	div.close:hover {
-	border:1px solid #222222;
-	background-color:#222222;
-	font-color:#ffffff;
+	border:1px solid ]] .. theme.speeddial.. [[;
+	background-color:]] .. theme.bg .. [[;
+	font-color:]] .. theme.fg .. [[;
 	}
 
 	div.pagename {
@@ -118,7 +118,7 @@ local html_template = [==[
 	height:11px;
     font-size:9pt;
     font-family:clean;
-    background-color:#222222;
+    background-color:]] .. theme.speeddial .. [[;
 	}
 	
     </style>
@@ -128,7 +128,7 @@ local html_template = [==[
 <div>{favs}</div>
 </body>
 </html>
-]==]
+]]
 
 -- readout "speed"-file
 local function favs()

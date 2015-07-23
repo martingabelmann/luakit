@@ -65,5 +65,8 @@ theme.loading_bg        = "#000"
 theme.trust_fg          = "#0F0"
 theme.notrust_fg        = "#F00"
 
+-- SpeedDial border-colour
+theme.speeddial         = "#222"
+
 return theme
 -- vim: et:sw=4:ts=8:sts=4:tw=80
