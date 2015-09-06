@@ -673,6 +673,7 @@ window.methods = {
         else
             return w:new_tab(uri)
         end
+        w:save_session()
     end,
 
     -- Save, restart luakit and reload session.
